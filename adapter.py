@@ -30,10 +30,10 @@ class BankPay:
         print("银联支付1000元")
 
 
-# # 类适配器
-# class NewBankPay(Payment, BankPay):
-#     def pay(self, money):
-#         self.cost(money)
+# 类适配器
+class NewBankPay(Payment, BankPay):
+    def pay(self, money):
+        self.cost(money)
 
 
 # 对象适配器
@@ -45,6 +45,7 @@ class Adapter(Payment):
         self.payment.cost(money)
 
 
+# 客户端
 adapter = Adapter(BankPay())
 res = adapter.pay(100)
 print(res)
