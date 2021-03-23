@@ -41,16 +41,7 @@ class WechatFactory(PayFactory):
         return WechatPay()
 
 
+# 客户端
 p = AliFactory()
 t = p.creat_payment()
 t.pay(100)
-
-
-class PaymentFactory(object):
-    def create_payment(self, method):
-        if method == "alia":
-            return AliPay()
-        elif method == "wechat":
-            return WechatPay()
-        else:
-            raise TypeError("No such payment name %s" % method)

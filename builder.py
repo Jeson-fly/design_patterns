@@ -81,4 +81,7 @@ class PlayerDirect:
         return builder.player
 
 
-print(bin(3).count("1"))
+# 客户端
+m = Monster()
+p = PlayerDirect().build_player(m)
+print(p)
