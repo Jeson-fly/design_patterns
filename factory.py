@@ -55,6 +55,6 @@ class HuabaiFactory(PaymentFactory):
 
 
 # 客户端
-
-a = HuabaiFactory().create_payment()
-a.pay(100)
+if __name__ == '__main__':
+    a = HuabaiFactory().create_payment()
+    a.pay(100)

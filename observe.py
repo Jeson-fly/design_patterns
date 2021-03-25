@@ -62,13 +62,14 @@ class Staff(Observer):
 
 
 # 客户端
-notice = StaffNotice("初始化公司信息")
-s1 = Staff()
-s2 = Staff()
-notice.attach(s1)
-notice.attach(s2)
-notice.comp_info = "今年业绩不错"
-print(s1.comp_info)
-notice.detach(s2)
-notice.comp_info = "公司倒闭了"
-print(s1.comp_info)
+if __name__ == '__main__':
+    notice = StaffNotice("初始化公司信息")
+    s1 = Staff()
+    s2 = Staff()
+    notice.attach(s1)
+    notice.attach(s2)
+    notice.comp_info = "今年业绩不错"
+    print(s1.comp_info)
+    notice.detach(s2)
+    notice.comp_info = "公司倒闭了"
+    print(s1.comp_info)

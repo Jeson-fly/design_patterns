@@ -42,6 +42,7 @@ class WechatFactory(PayFactory):
 
 
 # 客户端
-p = AliFactory()
-t = p.creat_payment()
-t.pay(100)
+if __name__ == '__main__':
+    p = AliFactory()
+    t = p.creat_payment()
+    t.pay(100)

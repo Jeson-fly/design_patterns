@@ -136,7 +136,7 @@ ___
 
 #### 三、 抽象工厂模式
 
-![抽象工厂模式](./images/)
+![抽象工厂模式](abstract_factory.py)
 #### 四、 建造者模式
 
 ![建造者模式](./images/build.png)
@@ -145,30 +145,35 @@ ___
 ![单例模式](./images/singleton.png)
 #### 六、 适配器模式
 
-![适配器模式](./images/)
+![适配器模式](./images/adapter_model.png)
 #### 七、 桥模式
 
-
+![桥模式](./images/brigge_model.png)
 #### 八、 组合模式
 
-
+![组合模式](./images/composite_mode.png)
 #### 九、 外观模式
     1. 内容
        - 为子系统中的一组接口提供一个一致的界面，外观模式定义了一个高层接口，这个接口使得子系统更加容易使用。
     2. 角色
        - 外观（facade）
        - 子系统类
+![外观模式](./images/observe.png)
 #### 十、 代理模式
 
-
+![代理模式](./images/proxy_model.png)
 #### 十一、责任链模式
 
 
-
+![责任链模式](./images/responsibility_model.png)
 #### 十二、 观察者模式
 
-
+![观察者模式](./images/observe.png)
 #### 十三、 策略模式
 
+![策略模式](./images/strategy_model.png)
 
 #### 十四、 模版方法模式
+
+
+![模版方法](./images/template_model.png)
