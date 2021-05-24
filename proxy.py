@@ -21,6 +21,7 @@ from abc import ABCMeta, abstractmethod
 """
 
 
+# 抽象实体
 class Subject(metaclass=ABCMeta):
     @abstractmethod
     def get_content(self):
@@ -31,6 +32,7 @@ class Subject(metaclass=ABCMeta):
         """"""
 
 
+# 实体
 class RealSubject(Subject):
     def __init__(self, filename):
         self.filename = filename
@@ -45,6 +47,7 @@ class RealSubject(Subject):
             f.write(content)
 
 
+# 代理（虚代理）
 class VirtualProxy(Subject):
     def __init__(self, filename):
         self.filename = filename
@@ -61,6 +64,7 @@ class VirtualProxy(Subject):
         self.subj.set_content(content)
 
 
+# 代理（保护代理）
 class ProtectedSubject(Subject):
     def __init__(self, filename):
         self.subj = RealSubject(filename)

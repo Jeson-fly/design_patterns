@@ -9,6 +9,7 @@
 from abc import ABCMeta, abstractmethod
 
 
+# 目标接口
 class Payment(metaclass=ABCMeta):
     @abstractmethod
     def pay(self, money):
@@ -25,6 +26,7 @@ class WechatPay(Payment):
         return "微信支付1000元"
 
 
+# 待适配接口
 class BankPay:
     def cost(self, money):
         print("银联支付1000元")
